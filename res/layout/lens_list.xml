@@ -22,19 +22,18 @@
     android:layout_height="match_parent"
     android:background="@color/car_lens_picker_bg_color"
     android:clipChildren="false">
-    <android.support.car.widget.PagedListView
+    <androidx.car.widget.PagedListView
         android:id="@+id/list_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="@dimen/lens_header_height"
-        app:offsetRows="false"
-        app:showDivider="false" />
+        android:layout_marginTop="@dimen/car_app_bar_height"
+        app:showPagedListViewDivider="false" />
     <RelativeLayout
         android:id="@+id/no_app_installed"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"
-        android:layout_marginTop="@dimen/lens_header_height" >
+        android:layout_marginTop="@dimen/car_app_bar_height" >
         <ImageView
             android:id="@+id/error_icon"
             android:layout_width="@dimen/lens_no_compatible_app_installed_icon_size"
